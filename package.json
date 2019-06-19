@@ -1,0 +1,26 @@
+{
+  "name": "tc-httpecho",
+  "version": "0.1.0",
+  "description": "A simple Node.js app for HTTP echo",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "httpecho.js",
+  "scripts": {
+    "start": "node httpecho.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/torentchan-hot/httpecho"
+  },
+  "keywords": [
+    "http",
+    "echo"
+  ],
+  "license": "MIT"
+}

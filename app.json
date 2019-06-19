@@ -1,0 +1,8 @@
+{
+  "name": "HTTP echo",
+  "description": "A simple Node.js app for HTTP echo",
+  "repository": "https://github.com/torentchan-hot/httpecho",
+  "logo": "https://amazonechouk.files.wordpress.com/2015/12/large.png",
+  "keywords": ["http", "echo"],
+  "image": "heroku/nodejs"
+}

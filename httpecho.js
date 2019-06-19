@@ -1,7 +1,7 @@
 // HTTPエコーサーバー HTTPリクエストボディデータを返す
 var http = require('http');
 var server = http.createServer();
-var port = 80;
+var port = process.env.PORT || 5000;
 
 // クライアントからリクエストボディデータをレスポンスとして返す
 server.on('request', function (req, res) {
