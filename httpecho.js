@@ -5,7 +5,11 @@ var port = process.env.PORT || 5000;
 
 // クライアントからリクエストボディデータをレスポンスとして返す
 server.on('request', function (req, res) {
-    var data = req.url+'\n';
+    var data = "query:"+req.url+"\n";
+    data += "localAddress:"+req.socket.localAddress+"\n";
+    data += "localPort:"+req.socket.localPort+"\n";
+    data += "remoteAddress:"+req.socket.remoteAddress+"\n";
+    data += "remotePort:"+req.socket.remotePort+"\n";
     req.on('data', function(chunk) {
         data += chunk;
     });
