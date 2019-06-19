@@ -5,14 +5,14 @@ var port = process.env.PORT || 5000;
 
 // クライアントからリクエストボディデータをレスポンスとして返す
 server.on('request', function (req, res) {
-    var data = '';
+    var data = '${req.url}\n';
     req.on('data', function(chunk) {
         data += chunk;
     });
 
     req.on('end', function () {
         res.writeHead(200, {'Content-Type' : 'text/plain'});
-        res.end('Body Echo : ' + data + '\n');
+        res.end(data + '\n');
     });
 });
 
